@@ -1,0 +1,72 @@
+//Question 1
+let x = '1';
+let answer;
+switch(x) {
+    case '1':
+        answer = "one";
+        break;
+    case '2':
+        answer = "two";
+        break;
+    default:
+        answer = "other";
+}
+console.log(answer);
+
+//Question 2
+let x1 = '1';
+let answer1;
+switch(x1) {
+    case '1':
+        answer = "one";
+    case 1:
+        answer = "this is the one";
+    default:
+        answer = "other";
+}
+console.log(answer1);
+
+//Question 3
+let login = false;
+let userOkay = login ? "success" : "login";
+console.log(userOkay);
+
+//Question 4
+let userNames = ["John", "Jane", "Bob"];
+let userInput = "John";
+let htmlOutput = "";
+
+if(userNames.indexOf(userInput) >= 0) {
+    htmlOutput = "Welcome, that is a user";
+} else {
+    htmlOutput = "Sorry, user not found";
+}
+console.log(htmlOutput + ": " + userInput);
+
+//Question 5
+let myTime = 9;
+if (myTime < 10) {
+    console.log("Wake up, it's morning");
+} else if (myTime < 20) {
+    console.log("Good day");
+} else {
+ console.log("Good night");
+}
+
+//Question 6
+let x2 = true;
+let y = false;
+console.log(x2 || y);    
+console.log(!x2 || y);   
+console.log(x2 || !y);   
+console.log(!x2 || !y);
+
+//Question 7
+let val = 100;
+console.log(val > 100 ? "100 was MORE than 100" : "100 was LESS or Equal to 100");
+
+let isEven = val % 2 === 0;
+console.log(isEven ? "Number is even" : "Number is odd");
+
+
+
