@@ -15,3 +15,9 @@ const doubledNumbersArrow = numbers.map(number => number * 2);
 //Step4:Log the result onto the console
 
 console.log("Using arrow function:", doubledNumbersArrow);
+
+var Fun = function(number) {
+    return number * 2;
+}
+const doubledNumbers1 = numbers.map(Fun);
+console.log(doubledNumbers1);
